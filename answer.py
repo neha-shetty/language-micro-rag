@@ -3,33 +3,33 @@ import json
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
-from ollama import Client  # 🐪 Local LLM!
+from ollama import Client  
 
 def main():
-    # ✅ Load Hugging Face embeddings (new package!)
+    #loading the local embeddings
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-    # ✅ Load FAISS index (allow pickle loading)
+    #load faiss index
     vectorstore = FAISS.load_local(
         "faiss_index",
         embeddings,
         allow_dangerous_deserialization=True
     )
 
-    # ✅ Load questions.json — expects list of dicts: { "question": ... }
+    #questions
     with open("questions.json", "r") as f:
         questions = json.load(f)
 
-    # ✅ Connect to local Ollama server
+    #ollama connection
     client = Client(host="http://localhost:11434")
 
     results = []
 
     for q_obj in questions:
         q = q_obj["question"]  
-        print(f"\n🔎 Question: {q}")
+        print(f"\n Question: {q}")
 
-        # Run similarity search
+        #similarity search
         docs = vectorstore.similarity_search(q, k=3)
 
         sources = []
@@ -39,7 +39,7 @@ def main():
             sources.append(source_file)
             context += doc.page_content + "\n"
 
-        # Prompt for Ollama LLM
+        #prompt
         prompt = f"""You are a helpful language tutor. 
 Use the context below to answer the question naturally.
 If possible, provide the translation and a pronunciation guide.
@@ -67,7 +67,7 @@ Answer in a helpful, clear way:"""
 
         results.append(result)
 
-    # ✅ Write all answers to answers.json
+    #save answers in another file
     with open("answers.json", "w") as f:
         json.dump(results, f, indent=2)
 
