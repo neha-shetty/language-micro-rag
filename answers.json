@@ -1,0 +1,86 @@
+[
+  {
+    "question": "How do I say hello in German?",
+    "answer": "Hello! In German, you can say \"Hallo\" (HAH-loh) to greet someone. It's a casual and friendly way to start a conversation or acknowledge someone's presence. So, the next time you meet a German friend or acquaintance, remember that \"Hallo\" is the perfect way to say hello in German!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq7.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq1.md"
+    ]
+  },
+  {
+    "question": "How do I ask for the menu in Italian?",
+    "answer": "You want to know how to ask for the menu in Italian? That's an easy one! You can simply say \"Il men\u00f9, per favore\" (eel meh-NOO pair fah-VOH-ray). This translates to \"The menu, please\". The pronunciation guide is there to help you get it just right.\n\nSo, next time you're at a restaurant in Italy, remember: Il men\u00f9, per favore!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq5.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq11.md"
+    ]
+  },
+  {
+    "question": "What should I say to ask for the bill in German?",
+    "answer": "To ask for the bill in German, you can simply say \"Die Rechnung, bitte\" (dee REKH-noong BIT-teh). This translates to \"The bill, please.\" Make sure to pronounce it with a slightly rising intonation at the end, as it's common in German to raise your pitch when asking someone for something.\n\nIf you're in Italy or want to use a more formal tone, you can say \"Il conto, per favore\" (eel KON-toh pair fah-VOH-ray), which also means \"The bill, please.\"",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq11.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq7.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq12.md"
+    ]
+  },
+  {
+    "question": "How do I say I am vegetarian in Italian?",
+    "answer": "Sono vegetariano/a!\n\nThis is a great question! In Italian, you can simply say \"Sono vegetariano\" (male) or \"Sono vegetariana\" (female). To make it even easier for the waiter to understand, you can add \"Senza carne\" which means \"without meat\". So, if you want to order like a pro, just say: \"Sono vegetariano/a, senza carne.\" Pronounce it with me: SOH-no veh-jeh-tah-REE-ah-no SEN-tsa KAR-neh.\n\nNow, go enjoy your Italian meal without the meat!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq5.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq11.md"
+    ]
+  },
+  {
+    "question": "What should I say while thanking someone in French?",
+    "answer": "When it comes to thanking someone in French, there are several ways to express your gratitude. Here's what I would recommend:\n\n* A simple \"Merci\" (pronounced \"mare-see\") will do the trick.\n* If you want to show more appreciation, you can say \"Merci beaucoup\" (pronounced \"mare-see boo-koo\"), which means \"Thanks a lot\".\n\nIf someone thanks you in return, you can respond with \"De rien\" (pronounced \"duh ree-ehn\"), which roughly translates to \"You're welcome\" or \"It was nothing\".\n\nRemember, the key is to be polite and courteous. A genuine \"Merci\" goes a long way in showing your appreciation!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq7.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq1.md"
+    ]
+  },
+  {
+    "question": "How do I say where is the hotel in French?",
+    "answer": "When asking for directions or trying to find something like the hotel, you can use the phrase \"O\u00f9 est...?\" which means \"Where is...?\"\n\nIn this case, you would say:\n\n\"O\u00f9 est l'h\u00f4tel?\"\n\n(pronounced \"oo eh leh-hoh-tel\")\n\nThis phrase is super helpful when traveling and trying to navigate a new place. Just remember that the word order in French can be different from English, so it's often useful to use this phrase as-is: \"Where is...\" followed by what you're looking for (in this case, the hotel).",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq2.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq10.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq1.md"
+    ]
+  },
+  {
+    "question": "How do I ask for help in French?",
+    "answer": "Asking for help in French is easy! You can use the phrase \"Au secours !\" which literally means \"Help!\" or \"To the rescue!\". This is a great phrase to know if you ever find yourself in a sticky situation and need assistance.\n\nHere's how you pronounce it: oh suh-koor. The stress is on the second syllable (suh).\n\nSo, if you need help, just shout out \"Au secours !\" and someone will likely come running to lend a hand!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq10.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq1.md"
+    ]
+  },
+  {
+    "question": "How do I say sparkling water in German?",
+    "answer": "Sparkling water in German is \"Sprudelwasser\" (pronounced SHPROO-del-vah-ser). You can use this phrase to order your favorite fizzy drink at a German cafe or restaurant!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq5.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq2.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq8.md"
+    ]
+  },
+  {
+    "question": "How do I ask where the toilets are in French?",
+    "answer": "When you need to find the restrooms while exploring France, you can ask for \"les toilettes\" or more informally, \"les wc\". Here's how:\n\n**Formal:** Pouvez-vous me dire o\u00f9 sont les toilettes? (poo-vay voo may deer oo soh lay too-ee-toh)\n\nTranslation: Can you tell me where the toilets are?\n\nPronunciation guide: poo-vay voo may deer oo soh lay too-ee-toh\n\n**Informal:** O\u00f9 sont les wc? (oo soh lay wee-cee)\n\nTranslation: Where are the restrooms?\n\nPronunciation guide: oo soh lay wee-cee\n\nJust remember that \"les toilettes\" is more formal, while \"les wc\" is a quicker way to ask for directions. Happy travels and bon app\u00e9tit!",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq2.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq10.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq1.md"
+    ]
+  },
+  {
+    "question": "How do I say cheers in German?",
+    "answer": "To say \"Cheers!\" in German, you can use the phrase \"Prost!\". This is a casual way to toast someone or celebrate something. Here's how you would pronounce it:\n\n\"Pohrst\" (with a slight emphasis on the first syllable)\n\nFor example, if you're having a beer with friends and want to say \"Cheers!\", you could say: \"Prost!\"",
+    "sources": [
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq11.md",
+      "/Users/nehashetty/memrise-micro-rag/sample_data/faq7.md"
+    ]
+  }
+]
