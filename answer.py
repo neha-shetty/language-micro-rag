@@ -40,21 +40,15 @@ def main():
             context += doc.page_content + "\n"
 
         #prompt
-        prompt = f"""You are a helpful language tutor. 
-Use the context below to answer the question naturally.
-If possible, provide the translation and a pronunciation guide.
-
-Respond directly and naturally — do NOT say "According to the context".
-
----
-
-Context:
-{context}
-
-Question:
-{q}
-
-Answer in a helpful, clear way:"""
+        prompt = f"""You are a helpful language tutor. Use the context below to answer the question naturally.
+        If possible, provide the translation and a pronunciation guide.
+        Respond directly and naturally — do NOT say "According to the context".
+        ---
+        Context:
+        {context}
+        Question:
+        {q}
+        Answer in a helpful, clear way:"""
 
         response = client.generate(model="llama3", prompt=prompt)
         final_answer = response['response']
