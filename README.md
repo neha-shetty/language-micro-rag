@@ -1,56 +1,48 @@
-# 📄 Take‑Home Assessment: Micro‑RAG Prototype
+# 🌍 PolyglotRAG
+
+A **Micro Retrieval-Augmented Generation (RAG) pipeline** for **language learning and translation**.  
+
+This prototype demonstrates how RAG can power **multilingual Q&A, translation, and pronunciation support** by retrieving knowledge from a small curated dataset of FAQs in **French, German, and Italian**.  
+
+Built as a **take-home assessment (2–4 hours)**, PolyglotRAG shows an end-to-end workflow: **data preparation → ingestion → retrieval → generation with citations**.  
 
 ---
 
-# 📚 Micro‑RAG Assessment
+## 📌 Assessment Requirements
 
-**Task:**  
-The assessment required building a **Micro-RAG prototype** to demonstrate an end‑to‑end Retrieval‑Augmented Generation workflow within **2–4 hours**.  
-
-**Requirements included:**
-- ✅ Build a tiny dataset (≥10 short Markdown or plain‑text FAQ files, each ≤1k tokens).
-- ✅ Add a `questions.json` file with 3–5+ answerable questions.
-- ✅ Write `ingest.py`: load the files, chunk them, embed them, and store them in a vector store.
-- ✅ Write `answer.py` or a notebook: load the index, retrieve relevant chunks, run an LLM call, and return answers with file-level citations.
-- ✅ Include a short `README` explaining setup, run commands, chunking choices, and tech rationale.
-
+- ✅ Tiny dataset: ≥10 short Markdown/FAQ files (≤1k tokens each)  
+- ✅ `questions.json`: 3–5+ answerable queries  
+- ✅ `ingest.py`: load, chunk, embed, and store vectors  
+- ✅ `answer.py`: retrieve relevant chunks & call a local LLM  
+- ✅ README with setup, run commands, chunking choices, and tech rationale  
 
 ---
 
-## ✅ What I did
+## 🚀 What I Built
 
-- **Tiny dataset:**  
-  Created `sample_data/` with 12 short Markdown FAQ files (French, German, Italian). Each file is under 1k tokens, clean, simple, and legal.
-
-- **Prepared realistic queries:**  
-  `questions.json` has 10 practical language questions.
-
-- **Ingestion pipeline:**  
-  `ingest.py` loads the folder, splits files into 500-character chunks with 50 overlap (to keep sentence meaning), embeds them using a free Hugging Face `sentence-transformer`, and stores dense vectors in a local FAISS index.
-
-- **Dense retrieval & generation:**  
-  `answer.py` loads the index, runs a similarity search for each question, then calls a local Ollama LLM (Llama3) to generate natural answers, including translations and pronunciation. Results are printed clearly and saved to `answers.json` with file-level citations.
-
-- **Virtual environment:**  
-  Used a Python virtual environment (`venv/`) to isolate dependencies and keep the setup reproducible and conflict-free.
+- **📂 Dataset** — `sample_data/` with 12 multilingual FAQ files (French, German, Italian)  
+- **❓ Queries** — `questions.json` with 10 realistic language-learning questions  
+- **⚙️ Ingestion** — `ingest.py` chunks files (500 chars, 50 overlap), embeds with Hugging Face `sentence-transformer`, and stores vectors in a local FAISS index  
+- **🤖 Retrieval + Generation** — `answer.py` retrieves top matches, queries a local Ollama LLM (Llama3), and returns **answers with translations, pronunciations, and citations**, saved to `answers.json`  
+- **📦 Environment** — clean `venv/` with pinned dependencies for reproducibility  
 
 ---
 
-## How to run
+## 🛠 How to Run
 
-# Create & activate venv
+```bash
+# 1️⃣ Create & activate virtual environment
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate   # on Windows: venv\Scripts\activate
 
-# Install requirements
+# 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-# Build the FAISS index
+# 3️⃣ Build FAISS index
 python ingest.py
 
-# Run the local LLM answers
+# 4️⃣ Run RAG-based Q&A
 python answer.py
 
-# (Optional) Run a quick test
+# 5️⃣ (Optional) Run quick test
 python test_answer.py
-
