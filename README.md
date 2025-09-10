@@ -1,4 +1,4 @@
-# 🌍 PolyglotRAG
+# PolyglotRAG
 
 A **Micro Retrieval-Augmented Generation (RAG) pipeline** for **language learning and translation**.  
 
@@ -8,7 +8,7 @@ Built as a **take-home assessment (2–4 hours)**, PolyglotRAG shows an end-to-e
 
 ---
 
-## 📌 Assessment Requirements
+## Assessment Requirements
 
 - ✅ Tiny dataset: ≥10 short Markdown/FAQ files (≤1k tokens each)  
 - ✅ `questions.json`: 3–5+ answerable queries  
@@ -18,13 +18,12 @@ Built as a **take-home assessment (2–4 hours)**, PolyglotRAG shows an end-to-e
 
 ---
 
-## 🚀 What I Built
+##  What I Built
 
-- **📂 Dataset** — `sample_data/` with 12 multilingual FAQ files (French, German, Italian)  
-- **❓ Queries** — `questions.json` with 10 realistic language-learning questions  
-- **⚙️ Ingestion** — `ingest.py` chunks files (500 chars, 50 overlap), embeds with Hugging Face `sentence-transformer`, and stores vectors in a local FAISS index  
-- **🤖 Retrieval + Generation** — `answer.py` retrieves top matches, queries a local Ollama LLM (Llama3), and returns **answers with translations, pronunciations, and citations**, saved to `answers.json`  
-- **📦 Environment** — clean `venv/` with pinned dependencies for reproducibility  
+- ** Dataset** — `sample_data/` with 12 multilingual FAQ files (French, German, Italian)  
+- ** Queries** — `questions.json` with 10 realistic language-learning questions  
+- ** Ingestion** — `ingest.py` chunks files (500 chars, 50 overlap), embeds with Hugging Face `sentence-transformer`, and stores vectors in a local FAISS index  
+- ** Retrieval + Generation** — `answer.py` retrieves top matches, queries a local Ollama LLM (Llama3), and returns **answers with translations, pronunciations, and citations**, saved to `answers.json`  
 
 ---
 
