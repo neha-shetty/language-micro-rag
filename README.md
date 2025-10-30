@@ -20,10 +20,10 @@ Built as a **take-home assessment (2–4 hours)**, PolyglotRAG shows an end-to-e
 
 ##  What I Built
 
-- ** Dataset** — `sample_data/` with 12 multilingual FAQ files (French, German, Italian)  
-- ** Queries** — `questions.json` with 10 realistic language-learning questions  
-- ** Ingestion** — `ingest.py` chunks files (500 chars, 50 overlap), embeds with Hugging Face `sentence-transformer`, and stores vectors in a local FAISS index  
-- ** Retrieval + Generation** — `answer.py` retrieves top matches, queries a local Ollama LLM (Llama3), and returns **answers with translations, pronunciations, and citations**, saved to `answers.json`  
+- Dataset — `sample_data/` with 12 multilingual FAQ files (French, German, Italian)  
+- Queries — `questions.json` with 10 realistic language-learning questions  
+- Ingestion — `ingest.py` chunks files (500 chars, 50 overlap), embeds with Hugging Face `sentence-transformer`, and stores vectors in a local FAISS index  
+- Retrieval + Generation — `answer.py` retrieves top matches, queries a local Ollama LLM (Llama3), and returns **answers with translations, pronunciations, and citations**, saved to `answers.json`  
 
 ---
 
